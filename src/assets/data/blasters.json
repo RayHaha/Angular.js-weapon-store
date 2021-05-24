@@ -1,0 +1,22 @@
+[
+    {
+      "name": "GR-4 ST Blaster",
+      "price": "400",
+      "beam": "green"
+    },
+    {
+      "name": "GR-9 Plasma Blaster",
+      "price": "740",
+      "beam": "orange"
+    },
+    {
+      "name": "TM-59 Blaster Pistol",
+      "price": "920",
+      "beam": "blue"
+    },
+    {
+      "name": "WL-29 Blaster",
+      "price": "785",
+      "beam": "purple"
+    }
+  ]

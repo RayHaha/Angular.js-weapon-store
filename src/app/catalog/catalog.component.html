@@ -1,0 +1,7 @@
+<!-- the list of catalog -->
+<ul id="catalogList" class="navbar-nav">
+    <li class="nav-item" [ngClass]="{'active': selectedItem == item}" (click)="catalogClick($event, item)"
+      *ngFor="let item of items">
+      <a class="nav-link" href="#">{{ item }}</a>
+    </li>
+  </ul>

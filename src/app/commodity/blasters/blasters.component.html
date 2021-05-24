@@ -1,0 +1,19 @@
+<div class="py-1" *ngFor="let blaster of blastersList">
+    <!-- use form to get the information which will be added to cart -->
+    <form (ngSubmit)="onSubmit(f, blaster)" #f="ngForm">
+      <div class="card">
+        <div class="card-body">
+          <div class="col-sm-6">
+            <h5 class="card-title">{{ blaster.name }}</h5>
+            <p class="list-group-item-text">Beam: {{ blaster.beam }}</p>
+            <p class="list-group-item-text">Price: ${{ blaster.price }}</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="quantity">Quantity</span>
+              <input type="number" class="form-control" placeholder="0" id="quantity" name="quantity" min="0" ngModel required pattern="^[1-9]+[0-9]*$">
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Add</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>

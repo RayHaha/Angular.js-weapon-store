@@ -1,0 +1,36 @@
+<!-- show something when no item was added to the cart -->
+<div class="pt-1 d-flex justify-content-center" *ngIf="cartList.length<1">
+    <h3>Cart is empty!</h3>
+  </div>
+  
+  <!-- something was added to the cart -->
+  <div class="pt-1" *ngIf="cartList.length>=1">
+  
+    <!-- the items were added to the cart -->
+    <div class="py-1" *ngFor="let item of cartList; let i = index">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="list-group-item-text">Price: ${{ item.price }}</p>
+          <p class="list-group-item-text">Quantity: {{ item.quantity }}</p>
+          <p class="list-group-item-text">Total: ${{ item.quantity * item.price }}</p>
+          <button type="button" class="btn btn-danger" (click)="onCancel(i)">Cancel</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- total price and order button -->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <h5 class="pt-1">Order Total: ${{ totalPrice }}</h5>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-success">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>

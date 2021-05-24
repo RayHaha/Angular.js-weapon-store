@@ -1,0 +1,14 @@
+<!-- show something when no catalog was choosen -->
+<div class="pt-1 d-flex justify-content-center" *ngIf="!selectedCatalog">
+    <h3>Please select a catalog!</h3>
+  </div>
+  
+  <!-- catalog Blasters is choosen -->
+  <div class="pt-1" *ngIf="selectedCatalog==='Blasters'">
+    <app-blasters></app-blasters>
+  </div>
+  
+  <!-- catalog Laser Sabers is choosen -->
+  <div class="pt-1" *ngIf="selectedCatalog==='Laser Sabers'">
+    <app-laser-sabers></app-laser-sabers>
+  </div>

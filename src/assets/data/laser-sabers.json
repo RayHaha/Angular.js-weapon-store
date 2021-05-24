@@ -1,0 +1,50 @@
+[
+    {
+      "name": "Blademaster's Shoto",
+      "price": "615",
+      "color": "blue",
+      "bladeCount": "1"
+    },
+    {
+      "name": "Tythian Lightsaber",
+      "price": "895",
+      "color": "green",
+      "bladeCount": "1"
+    },
+    {
+      "name": "Fractured Bogan Lightsaber",
+      "price": "790",
+      "color": "red",
+      "bladeCount": "1"
+    },
+    {
+      "name": "Indomitable Vanquisher's Lightsaber",
+      "price": "585",
+      "color": "purple",
+      "bladeCount": "1"
+    },
+    {
+      "name": "Skorpion TK Dualsaber",
+      "price": "1025",
+      "color": "blue",
+      "bladeCount": "2"
+    },
+    {
+      "name": "Entropic Dualsaber",
+      "price": "999",
+      "color": "green",
+      "bladeCount": "2"
+    },
+    {
+      "name": "Twisted Fang Dualsaber",
+      "price": "790",
+      "color": "red",
+      "bladeCount": "2"
+    },
+    {
+      "name": "Starforged Dualsaber",
+      "price": "1256",
+      "color": "purple",
+      "bladeCount": "2"
+    }
+  ]
